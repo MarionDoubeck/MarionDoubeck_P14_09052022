@@ -1,0 +1,50 @@
+@font-face {
+    font-family: cinzel;
+    src: url('../Cinzel/Cinzel-VariableFont_wght.ttf');
+    font-display: swap;
+}
+
+$color-1:#93AD32;
+$color-2:#6E8724;
+$color-3:#5F741E;
+$bgColor:#ebede2;
+$darkBG:#5f625377;
+
+.hidden{
+    display: none !important;
+}
+
+body {
+    margin: 1rem;
+    font-family: cinzel, sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    background-color: $bgColor;
+}
+
+a, a:visited{
+    text-decoration: none;
+    color: black;
+}
+
+
+h1{
+    color: $color-3; 
+    font-weight: bold;
+    font-size: 3rem;
+}
+
+h2{
+    width: 100%;
+    text-align: left;
+}
+
+button{
+    cursor: pointer;
+}
+
+li{
+    list-style: none;
+}
+
+

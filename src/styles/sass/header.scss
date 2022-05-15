@@ -1,0 +1,49 @@
+header{
+    padding: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border: 2px solid $color-3;
+    border-radius: 5px;
+    margin-bottom: 1rem;
+    img{
+        width: 10rem;
+        height: 9.17rem;
+    }
+    .nav{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        position: relative;
+    }
+    .link{
+        font-size: 1.5rem;
+        padding: 1rem;
+        &:hover{
+            transform: translateY(-1rem);
+        }
+    }
+    .link:hover + #logoLink{
+            display: block !important;
+    }
+    #logoLink{
+        display: none;
+        width: 2rem;
+        height: 2rem;
+        margin-left: .5rem;
+        padding-bottom: 1rem;
+        position: absolute;
+        top: 80%;
+        left: 50%;
+        transform-origin: 50% 35%;
+        animation: rotation 4s infinite linear;
+        @keyframes rotation {
+            from {
+              transform: translateX(-50%) rotate(0deg);
+            }
+            to {
+              transform: translateX(-50%) rotate(359deg);
+            }
+          }
+    }
+}
