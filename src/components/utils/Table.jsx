@@ -2,12 +2,17 @@ import BootstrapTable from 'react-bootstrap-table-next'
 import paginationFactory from 'react-bootstrap-table2-paginator'
 import ToolkitProvider, { Search } from 'react-bootstrap-table2-toolkit/dist/react-bootstrap-table2-toolkit'
 
-const { SearchBar, ClearSearchButton } = Search;
+
 
 const Table = ({data}) => {
+    /**
+     * Add index for keyField
+     */
     data.forEach ( (employee, index) => {
         employee.index = index
     })
+
+    const { SearchBar, ClearSearchButton } = Search;
 
     const columns = [{
         dataField: 'firstName',

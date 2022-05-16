@@ -5,7 +5,10 @@ const PopIn = ({mode, setMode}) => {
         popIn = (
             <div id="popInContainer">
                 <div id="popIn">
-                    <button className="close" onClick={() => setMode('hide')}>&#10006;</button>
+                    <button     
+                        className="close" 
+                        onClick={() => setMode('hide')}
+                    >&#10006;</button>
                     <p>Employee Created !</p>
                 </div>
             </div>
