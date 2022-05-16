@@ -11,10 +11,29 @@ th, td, tr {
     font-family: 'Dosis', sans-serif;
 }
 
-.page-item.active .page-link{
-        background-color: $color-1;
-        border-color: $color-1;
-}
 .page-link{
-    color: $color-3;
+    border-radius: 5px;
+    background-color: $color-3;
+    border: none;
+    color: white;
+    font-family: cinzel;
+    font-weight: bold;
+    box-shadow: 1px 1px 1px 1px rgb(171, 170, 170);
+    transition: transform 330ms ease-in-out;
+    &:hover{
+        transform: scale(1.1);
+    }
+}
+.page-item.active .page-link{
+    border-radius: 5px;
+    background-color: $color-1;
+    border: none;
+    color: white;
+    font-family: cinzel;
+    font-weight: bold;
+    box-shadow: 1px 1px 1px 1px rgb(171, 170, 170);
+    &:hover{
+        transform: scale(1);
+    }
+    cursor: default;
 }

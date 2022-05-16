@@ -87,6 +87,11 @@ main{
         color: white;
         font-family: cinzel;
         font-weight: bold;
+        box-shadow: 1px 1px 1px 1px rgb(171, 170, 170);
+        transition: transform 330ms ease-in-out;
+        &:hover{
+            transform: scale(1.1);
         }
+    }
 }
 

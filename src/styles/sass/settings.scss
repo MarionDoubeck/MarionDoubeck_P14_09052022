@@ -22,9 +22,9 @@ body {
     background-color: $bgColor;
 }
 
-a, a:visited{
-    text-decoration: none;
-    color: black;
+a, a:active, a:visited{
+    text-decoration: none ;
+    color: black ;
 }
 
 
