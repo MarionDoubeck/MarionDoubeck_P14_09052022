@@ -67,7 +67,7 @@ const Main = () => {
             <div className='profile'>
                 <p>Profile</p>
 
-                <label for='firstName'>First Name</label>
+                <label htmlFor='firstName'>First Name</label>
                 <input 
                     type='text' 
                     name='firstName'
@@ -76,7 +76,7 @@ const Main = () => {
                     onChange={ e => setEmployeeData({...employeeData, [e.target.name]: e.target.value})}
                 />
 
-                <label for='lastName'>Last Name</label>
+                <label htmlFor='lastName'>Last Name</label>
                 <input 
                     type='text'
                     name='lastName'
@@ -85,7 +85,7 @@ const Main = () => {
                     onChange={ e => setEmployeeData({...employeeData, [e.target.name]: e.target.value})}
                 />
 
-                <label for='birthDate' >Date of Birth</label>
+                <label htmlFor='birthDate' >Date of Birth</label>
                 <DatePicker 
                     name='birthDate' 
                     id='birthDate' 
@@ -93,7 +93,7 @@ const Main = () => {
                     value = {employeeData.birthDate}
                 />
                 
-                <label for='startDate' >Start Date</label>
+                <label htmlFor='startDate' >Start Date</label>
                 <DatePicker 
                     name='startDate' 
                     id='startDate' 
@@ -113,7 +113,7 @@ const Main = () => {
             <div className='adress'>
                 <p>Address</p>
 
-                <label for='street'>Street</label>
+                <label htmlFor='street'>Street</label>
                 <input 
                     type='text' 
                     name='street'
@@ -122,7 +122,7 @@ const Main = () => {
                     onChange={ e => setEmployeeData({...employeeData, [e.target.name]: e.target.value})}
                 />
 
-                <label for='city'>City</label>
+                <label htmlFor='city'>City</label>
                 <input 
                     type='text' 
                     name='city'
@@ -139,7 +139,7 @@ const Main = () => {
                     updateSelect={updateState}
                 />
 
-                <label for='zipCode'>Zip Code</label>
+                <label htmlFor='zipCode'>Zip Code</label>
                 <input 
                     type='number' 
                     name='zipCode'
