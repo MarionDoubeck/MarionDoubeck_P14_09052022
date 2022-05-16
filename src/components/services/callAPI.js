@@ -10,3 +10,7 @@ export const callAPI = () => {
         }
     }  
 }
+
+export const postAPI = (employees) => {
+    localStorage.setItem('employees', JSON.stringify(employees));
+}

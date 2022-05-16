@@ -7,6 +7,7 @@ import { usaStates } from '../data/usaStates'
 import PopIn from '../utils/PopIn'
 import { addEmployee } from '../redux/Actions'
 import DatePicker from '../utils/DatePicker'
+import { postAPI } from '../services/callAPI'
 
 
 const Main = () => {
@@ -48,7 +49,7 @@ const Main = () => {
             zipCode: employeeData.zipCode
         };
         employees.push(employee);
-        localStorage.setItem('employees', JSON.stringify(employees));
+        postAPI(employees)
         dispatch(addEmployee(employees))
     }
 
